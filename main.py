@@ -49,4 +49,4 @@ def check_password():
         return flask.jsonify({"valid": False, "reason": "Not enough digits"}), 200
     
     
-    return flask.jsonify({"valid": False, "reason": "Not implemented"}), 501
+    return flask.jsonify({"valid": True, "reason": "Valid Password"}), 400
