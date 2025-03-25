@@ -39,7 +39,7 @@ def check_password():
             uppercase += 1
         if i.isnumeric():
             digit += 1
-        if i in "!@#$%^&*()_+":
+        if i in "!@#$%^&*":
             special = True
     if special == False:
         return flask.jsonify({"valid": False, "reason": "No special characters"}), 200
